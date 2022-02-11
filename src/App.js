@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
@@ -7,9 +7,7 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Register from './pages/Register'
 
-class App extends Component {
-  
-  render(){
+const App = () => {
     return (
       <Router>
         {/* perubahan dari switch to Routes */}
@@ -22,7 +20,6 @@ class App extends Component {
         </Routes>
       </Router>
     )
-  }
 }
 
 export default App;
